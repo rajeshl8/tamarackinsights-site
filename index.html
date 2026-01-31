@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamarack Insights | Bookkeeping, Tax & Payroll Solutions</title>
+  <meta name="description" content="Tamarack Insights provides bookkeeping, tax preparation, payroll implementation, and financial systems automation for growing businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Tamarack Insights Logo" />
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <button class="cta-button" onclick="scrollToContact()">Book a Consultation</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Reliable bookkeeping, tax, and payroll solutions</h1>
+      <p class="hero-subtitle">Powered by modern financial systems and automation</p>
+      <button class="hero-cta" onclick="scrollToContact()">Get Started Today</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Tamarack Insights</h2>
+        <div class="underline"></div>
+      </div>
+      
+      <div class="about-content-new">
+        <p class="about-lead">
+          We help businesses streamline their financial operations through accurate bookkeeping,
+          compliant tax preparation, and expert payroll software management.
+        </p>
+        
+        <p class="about-description">
+          With a skilled team of accountants and technology consultants, Tamarack combines deep financial expertise
+          with hands-on experience implementing and managing leading payroll and back-office systems.
+        </p>
+        
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">✓</div>
+            <div class="highlight-content">
+              <h4>Certified Professionals</h4>
+              <p>Expert accountants and technology consultants with deep industry knowledge</p>
+            </div>
+          </div>
+          
+          <div class="highlight-item">
+            <div class="highlight-icon">✓</div>
+            <div class="highlight-content">
+              <h4>Official Implementation Partner</h4>
+              <p>Authorized partner for ADP and Rippling payroll systems</p>
+            </div>
+          </div>
+          
+          <div class="highlight-item">
+            <div class="highlight-icon">✓</div>
+            <div class="highlight-content">
+              <h4>Modern Automation</h4>
+              <p>Cutting-edge tools to streamline your financial processes and improve efficiency</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <div class="underline"></div>
+        <p class="section-description">Comprehensive financial solutions tailored to your business needs</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Bookkeeping & Financial Reporting</h3>
+          <ul>
+            <li>Daily transaction posting and reconciliations</li>
+            <li>Accounts payable and receivable management</li>
+            <li>Cash flow reporting and analysis</li>
+            <li>Month-end and year-end financial statements</li>
+            <li>Multi-entity and consolidated reporting</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📋</div>
+          <h3>Tax Preparation & Compliance</h3>
+          <ul>
+            <li>Federal, state, and local tax filings</li>
+            <li>Quarterly tax estimates and projections</li>
+            <li>Tax optimization and advisory</li>
+            <li>Audit response and documentation support</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💼</div>
+          <h3>Payroll Software Implementation</h3>
+          <ul>
+            <li>ADP and Rippling implementation</li>
+            <li>Payroll data migration and integrations</li>
+            <li>Workflow design and system administration</li>
+            <li>Ongoing maintenance and compliance support</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Financial Systems Integration</h3>
+          <ul>
+            <li>Payroll, accounting, and HR system integration</li>
+            <li>Cloud setup and user training</li>
+            <li>Process automation and dashboards</li>
+            <li>Custom reporting and analytics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <div class="underline"></div>
+        <p class="section-description">Ready to transform your financial operations? Let's start the conversation.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="john@company.com" required />
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" placeholder="Your Company" />
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Tell us about your needs..." rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <h4>📍 Location</h4>
+            <p>Serving businesses across the United States</p>
+          </div>
+          
+          <div class="info-card">
+            <h4>📧 Email</h4>
+            <p><a href="mailto:info@tamarackinsights.com">info@tamarackinsights.com</a></p>
+          </div>
+          
+          <div class="info-card">
+            <h4>⏰ Business Hours</h4>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Tamarack Insights Logo" />
+          <p>One Stop Solutions</p>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="footer-services">
+          <h4>Services</h4>
+          <a href="#services">Bookkeeping</a>
+          <a href="#services">Tax Preparation</a>
+          <a href="#services">Payroll Solutions</a>
+          <a href="#services">System Integration</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tamarack Insights. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll to contact section
+    function scrollToContact() {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+
+    // Smooth scrolling for all navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Form submission handler
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('.contact-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Show success message
+          const button = this.querySelector('.submit-button');
+          const originalText = button.textContent;
+          button.textContent = '✓ Message Sent!';
+          button.style.background = 'var(--primary-green)';
+          
+          // Reset form
+          this.reset();
+          
+          // Reset button after 3 seconds
+          setTimeout(() => {
+            button.textContent = originalText;
+            button.style.background = '';
+          }, 3000);
+        });
+      }
+    });
+
+    // Add animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.service-card').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
