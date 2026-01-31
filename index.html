@@ -289,24 +289,29 @@
           button.textContent = 'Sending...';
           button.disabled = true;
           
-          // Submit to Netlify
+          // Submit to Netlify with proper encoding
           fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString()
           })
-          .then(() => {
-            // Show success message, hide form
-            document.getElementById('contactForm').style.display = 'none';
-            document.getElementById('successMessage').style.display = 'block';
-            
-            // Scroll to success message
-            document.getElementById('successMessage').scrollIntoView({ 
-              behavior: 'smooth', 
-              block: 'center' 
-            });
+          .then(response => {
+            if (response.ok) {
+              // Show success message, hide form
+              document.getElementById('contactForm').style.display = 'none';
+              document.getElementById('successMessage').style.display = 'block';
+              
+              // Scroll to success message
+              document.getElementById('successMessage').scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'center' 
+              });
+            } else {
+              throw new Error('Form submission failed');
+            }
           })
           .catch((error) => {
+            console.error('Error:', error);
             alert('Oops! There was an error submitting your form. Please try again.');
             button.textContent = 'Send Message';
             button.disabled = false;
