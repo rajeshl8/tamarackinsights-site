@@ -395,6 +395,65 @@ body {
   box-shadow: var(--shadow);
 }
 
+.success-message {
+  background: var(--white);
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  animation: fadeInUp 0.6s ease;
+}
+
+.success-message .success-icon {
+  font-size: 80px;
+  color: var(--primary-green);
+  margin-bottom: 24px;
+  display: block;
+  animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.success-message h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 36px;
+  color: var(--dark-navy);
+  margin-bottom: 16px;
+}
+
+.success-message p {
+  font-size: 18px;
+  color: var(--text-light);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.show-form-button {
+  background: var(--primary-green);
+  color: var(--white);
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.show-form-button:hover {
+  background: var(--dark-green);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
